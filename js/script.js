@@ -31,7 +31,7 @@ const listElements = document.querySelectorAll('li')
 const spanDayOfWeek = document.querySelector('.spanDayOfWeek')
 
 //Link do API pogodowego
-const API_LINK = `http://api.openweathermap.org/data/2.5/weather?q=`
+const API_LINK = `https://api.openweathermap.org/data/2.5/weather?q=`
 
 //Klucz do API pogodowego
 const API_KEY = '&APPID=ebb6b0b21a9c59c8ec51f6ac599f5226'
@@ -78,7 +78,7 @@ const getWeather = () => {
         actualWindSpeed.textContent = (Number(res.data.wind.speed) * 3.6).toFixed(0) + ' km/h'
         actualPressure.textContent = (Number(res.data.main.pressure)) + ' hPa'
 
-        actualIcon.setAttribute('src', `http://openweathermap.org/img/wn/${icoCode}@2x.png`)
+        actualIcon.setAttribute('src', `https://openweathermap.org/img/wn/${icoCode}@2x.png`)
         search.value = ''
     })
 }
