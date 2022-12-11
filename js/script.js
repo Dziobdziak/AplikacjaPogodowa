@@ -98,7 +98,7 @@ const getRealDate = () => {
     const dateNow = new Date()
     const monthNames = ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień']
     const dayNames = ['Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota', 'Niedziela']
-    const dayOfWeek = dayNames[dateNow.getDay() - 1] 
+    const dayOfWeek = dateNow.toLocaleString('default', {weekday: 'long'}) 
     const dayNow = dateNow.getDate() //dzień miesiąca
     const month = dateNow.getMonth() //miesiąc
     const year = dateNow.getFullYear() //rok
