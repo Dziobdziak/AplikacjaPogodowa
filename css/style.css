@@ -264,6 +264,9 @@ main .centerMainDiv .centerHeader .centerHeaderLeft {
       -ms-flex-align: center;
           align-items: center;
 }
+main .centerMainDiv .centerHeader .centerHeaderLeft .spanDayOfWeek{
+  text-transform: capitalize;
+}
 main .centerMainDiv .centerHeader .centerHeaderRight {
   width: 70%;
   height: 100%;
