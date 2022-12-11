@@ -829,7 +829,7 @@ main .rightMainDiv .authorDiv a:hover {
   main .centerMainDiv .centerHeader .centerHeaderRight .search {
     height: 40px;
     width: 80%;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
   main .centerMainDiv .centerHeader .centerHeaderRight .goBtn {
     height: 40px;
